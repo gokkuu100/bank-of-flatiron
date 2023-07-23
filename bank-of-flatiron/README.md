@@ -10,7 +10,7 @@ This application allows the flat iron bank to view a list of trnasactions made, 
 -JSX
 
 #Usage
-Git clone the respository to your local machine, run app the react application and enjoy!!
+Git clone the respository to your local machine, run app the react application  navigate to the src folder on your editor and enjoy!!
 
 # Getting Started with Create React App
 
