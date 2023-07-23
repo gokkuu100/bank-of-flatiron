@@ -54,4 +54,57 @@ const TransactionForm = () => {
       amount: "",
     });
   };
-  
+
+  return (
+    <>
+      <h3>Add New Transaction</h3>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Date: </label>
+          <input
+            type="date"
+            name="date"
+            value={formData.date}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label>Description: </label>
+          <input
+            type="text"
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label>Category: </label>
+          <input
+            type="text"
+            name="category"
+            value={formData.category}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label>Amount: </label>
+          <input
+            type="number"
+            name="amount"
+            value={formData.amount}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <button type="submit">Add Transaction</button>
+        </div>
+      </form>
+    </>
+  );
+};
+
+export default TransactionForm;
