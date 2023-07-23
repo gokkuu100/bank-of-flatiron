@@ -17,7 +17,7 @@ const TransactionList = () => {
         if (!data || typeof data !== 'object' || Object.keys(data).length === 0) {
           throw new Error('Wrong format');
         }
-        setTransactions(data); // Save the fetched data as an object
+        setTransactions(data); 
       })
       .catch((error) => {
         console.error('Error when fetching data:', error);
