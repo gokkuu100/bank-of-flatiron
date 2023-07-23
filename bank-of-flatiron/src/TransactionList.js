@@ -15,7 +15,13 @@ const TransactionList = () => {
                 <th>Amount</th>
             </tr>
             <tr>
-                
+                {transactions.map(transaction => (
+                    <tr key={transaction.id}>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                ))}
             </tr>
         </table>
         </>
