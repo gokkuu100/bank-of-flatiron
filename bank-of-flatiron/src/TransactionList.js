@@ -1,7 +1,11 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 const TransactionList = () => {
     const [transactions, setTransactions] = useState([])
+
+    useEffect(() => {
+        
+    })
 
     return (
         <>
@@ -17,10 +21,12 @@ const TransactionList = () => {
             <tr>
                 {transactions.map(transaction => (
                     <tr key={transaction.id}>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{transaction.id}</td>
+                        <td>{transaction.date}</td>
+                        <td>{transaction.description}</td>
+                        <td>{transaction.category}</td>
+                        <td>{transaction.amount}</td>
+                    </tr>
                 ))}
             </tr>
         </table>
