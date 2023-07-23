@@ -5,8 +5,12 @@ const SearchList = () => {
     const [transactions, setTransactions] = useState([]);
     const [loading, setLoading] = useState(true);
 
+
+    const handleSearch = (e) => {
+        setSearchTerm(e.target.value);
+      };
+
     return (
-        
         <>
           <h2>Search Transaction</h2>
           <form>
