@@ -5,6 +5,28 @@ const SearchList = () => {
     const [transactions, setTransactions] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    useEffect(() => {
+        fetch('http://localhost:3001/transactions')
+          .then((resp) => {
+            if (!resp.ok) {
+              throw new Error('Error fetching');
+            }
+            return resp.json();
+          })
+          .then((data) => {
+            //console.log('Received data:', data);
+            if (!data || !Array.isArray(data)) {
+              throw new Error('Wrong format');
+            }
+            setTransactions(data); 
+            setLoading(false); 
+          })
+          .catch((error) => {
+            console.error('Error when fetching data:', error);
+            setLoading(false); 
+          });
+      }, []);
+
 
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
