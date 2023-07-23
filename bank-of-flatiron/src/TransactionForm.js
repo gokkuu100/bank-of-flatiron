@@ -56,9 +56,9 @@ const TransactionForm = () => {
 
   return (
     <>
-      <h3>Add New Transaction</h3>
+      <h2>Add New Transaction</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="form">
           <label>Date: </label>
           <input
             type="date"
@@ -68,7 +68,7 @@ const TransactionForm = () => {
             required
           />
         </div>
-        <div>
+        <div className="form">
           <label>Description: </label>
           <input
             type="text"
@@ -78,7 +78,7 @@ const TransactionForm = () => {
             required
           />
         </div>
-        <div>
+        <div className="form">
           <label>Category: </label>
           <input
             type="text"
@@ -88,7 +88,7 @@ const TransactionForm = () => {
             required
           />
         </div>
-        <div>
+        <div className="form">
           <label>Amount: </label>
           <input
             type="number"

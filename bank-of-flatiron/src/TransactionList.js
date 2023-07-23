@@ -30,7 +30,7 @@ const TransactionList = () => {
   return (
     <>
       
-      <h3>Transaction table</h3>
+      <h2>Transaction table</h2>
       <table>
         <thead>
             <tr>

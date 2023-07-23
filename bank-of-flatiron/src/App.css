@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+table {
+  border-collapse: separate;
+  border-spacing: 10px; 
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  padding: 5px;
+}
+input {
+  padding: 5px;
+  width: 30%;
+}
+button {
+  padding: 10px;
+  border-radius: 5px;
+}
+h2{
+  color: red;
+  text-align: center;
+}
