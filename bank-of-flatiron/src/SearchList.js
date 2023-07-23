@@ -10,6 +10,10 @@ const SearchList = () => {
         setSearchTerm(e.target.value);
       };
 
+    const filteredTransactions = transactions.filter((transaction) =>
+    transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
     return (
         <>
           <h2>Search Transaction</h2>
