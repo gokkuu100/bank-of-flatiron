@@ -16,12 +16,12 @@ const TransactionForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Create a newTransaction object with the form data
+    // Creates a new object with the form data
     const newTransaction = {
       date: formData.date,
       description: formData.description,
       category: formData.category,
-      amount: parseFloat(formData.amount), // Parse amount to a float
+      amount: parseFloat(formData.amount), // Parses to float
     };
     
     // Send the POST request to the server
@@ -39,14 +39,13 @@ const TransactionForm = () => {
         return resp.json();
       })
       .then((data) => {
-        // If needed, handle the response data from the server
         console.log("Transaction added:", data);
       })
       .catch((error) => {
         console.error("Error", error);
       });
 
-    // Clear the form data after submitting
+    // Clears the form data after submitting
     setFormData({
       date: "",
       description: "",
