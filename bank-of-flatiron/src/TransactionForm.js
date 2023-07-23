@@ -39,6 +39,7 @@ const TransactionForm = () => {
         return resp.json();
       })
       .then((data) => {
+        alert("Transaction added")
         console.log("Transaction added:", data);
       })
       .catch((error) => {

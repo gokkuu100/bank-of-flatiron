@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import TransactionTable from './Transationtable';
 
 const TransactionList = () => {
   const [transactions, setTransactions] = useState({}); // Change initial state to an object
@@ -31,28 +32,7 @@ const TransactionList = () => {
     <>
       
       <h2>Transaction table</h2>
-      <table>
-        <thead>
-            <tr>
-            <th>ID</th>
-            <th>Date</th>
-            <th>Description</th>
-            <th>Category</th>
-            <th>Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Object.values(transactions).map((transaction) => (
-            <tr key={transaction.id}>
-              <td>{transaction.id}</td>
-              <td>{transaction.date}</td>
-              <td>{transaction.description}</td>
-              <td>{transaction.category}</td>
-              <td>{transaction.amount}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <TransactionTable transactions={transactions}/>
     </>
   );
 };
