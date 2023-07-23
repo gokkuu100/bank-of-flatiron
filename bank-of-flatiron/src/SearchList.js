@@ -40,7 +40,7 @@ const SearchList = () => {
         <>
           <h2>Search Transaction</h2>
           <form>
-            <label>Search: </label>
+            <label><strong>Search: </strong></label>
             <input
               type="text"
               value={searchTerm}

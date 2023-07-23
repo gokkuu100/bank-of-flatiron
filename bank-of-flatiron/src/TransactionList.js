@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-//import TransactionForm from './TransactionForm';
 
 const TransactionList = () => {
   const [transactions, setTransactions] = useState({}); // Change initial state to an object
@@ -23,20 +22,6 @@ const TransactionList = () => {
         console.error('Error when fetching data:', error);
       });
   }, []);
-
-//   const addTransaction = (newTransaction) => {
-//     // Generate a new unique ID (you can use a library like 'uuid' for this purpose)
-//     const newId = Object.keys(transactions).length + 1;
-
-//     // Create the new transaction object with the new ID
-//     const transactionToAdd = { ...newTransaction, id: newId };
-
-//     // Update the transactions state with the new transaction added
-//     setTransactions((prevTransactions) => ({
-//       ...prevTransactions,
-//       [newId]: transactionToAdd,
-//     }));
-//   };
 
   if (!transactions || typeof transactions !== 'object' || Object.keys(transactions).length === 0) {
     return null;
