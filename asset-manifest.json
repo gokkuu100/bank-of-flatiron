@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gokkuu100/bank-of-flatiron/static/css/main.8618fe43.css",
+    "main.js": "/gokkuu100/bank-of-flatiron/static/js/main.a013d04f.js",
+    "static/js/787.059bd8a1.chunk.js": "/gokkuu100/bank-of-flatiron/static/js/787.059bd8a1.chunk.js",
+    "index.html": "/gokkuu100/bank-of-flatiron/index.html",
+    "main.8618fe43.css.map": "/gokkuu100/bank-of-flatiron/static/css/main.8618fe43.css.map",
+    "main.a013d04f.js.map": "/gokkuu100/bank-of-flatiron/static/js/main.a013d04f.js.map",
+    "787.059bd8a1.chunk.js.map": "/gokkuu100/bank-of-flatiron/static/js/787.059bd8a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8618fe43.css",
+    "static/js/main.a013d04f.js"
+  ]
+}
