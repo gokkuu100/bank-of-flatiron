@@ -1,17 +1,17 @@
 Deployed site : https://64c01df6d9504d113a0f5c2d--zesty-dragon-c60f35.netlify.app/ . Run the db.json locally to see the list of transactions and full functionality of the app.
 
-#Bank of FlatIron
+# Bank of FlatIron
 This is a react application that fetches data from an api and can add data to the server database.
 
-#Description
+# Description
 This application allows the flat iron bank to view a list of trnasactions made, a user could search for a certain transaction by its description and transactions could also be added to the database by filling out a form.
 
 
-#Technology used
+# Technology used
 -React
 -JSX
 
-#Usage
+# Usage
 Git clone the respository to your local machine, run app the react application  navigate to the src folder on your editor and enjoy!!
 
 # Getting Started with Create React App
